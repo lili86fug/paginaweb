@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPINIONES</title>
+    <link rel="stylesheet" href="/estilos/estiloform.css">
+    <link rel="icon" href="/imagenes/favicon3.jpg" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><a href="../index.html">Desconecta en la naturaleza</a></h1>
+
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="destinos.html">DESTINOS</a></li>
+                    <li> <a href="galeria.html">GALERIA</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container1">
+        <h1>Deja tu Comentario</h1>
+        <p>Si has visitado estos sitios comparte tu expericiencia</p>
+        <form id="commentForm">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" name="comment" rows="5" required></textarea>
+            </div>
+            <button type="submit">Enviar Comentario</button>
+        </form>
+
+        <h2>Comentarios Recientes</h2>
+        <div id="commentsContainer">
+            </div>
+    </div>
+    <button id="clearComments">Borrar todos los comentarios</button>
+
+<div id="commentsContainer">
+</div>
+
+    <script src="../javascript/script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Descubre la Bellaza Rural  .  Todos los derechos reservados.</p>
+            
+            <div class="social">
+                <p>Síguenos en</p>
+                <a href="https://www.instagram.com/lili.ana0586/">Instagram</a>
+            </div>
+        </div>
+    </footer>  
+</body>
+</html>

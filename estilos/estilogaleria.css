@@ -1,0 +1,177 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 a {
+    color: #38761d; 
+    text-decoration: none;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    display: block;
+}
+
+
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    margin-bottom: 10px;
+    border-bottom: #000;
+}
+
+header nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color:#fff;
+    transition: color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+header nav ul li a:hover {
+text-shadow: 2px 2px 5px #ddd;
+}
+
+
+  header {
+    background-image: url('../imagenes/imagenpaisaje.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 200px; /* o el alto que necesites */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  h1{
+    color: #38761d;
+    text-align: center;
+  }
+a {
+    color: green;
+}
+main {
+    padding: 30px 0;
+}
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual ancho */
+    grid-template-rows: auto;
+    grid-gap: 10px; /* Espacio entre las imágenes */
+    
+}
+
+.grid-item {
+    text-align: center; /* Centra el contenido dentro de cada celda */
+    object-fit: contain;
+}
+
+.grid-item img {
+    max-width: 100%; /* Asegura que la imagen no se desborde de su contenedor */
+    height: 96%; /* Mantiene la proporción de la imagen */
+    display: block; /* Evita espacio extra debajo de la imagen */
+    margin-bottom: 5px; /* Espacio entre la imagen y el título */
+   width: 100%;
+}
+
+.title {
+    font-size: 0.9em; /* Tamaño de fuente del título */
+    color: #333; /* Color del texto del título */
+}
+ 
+
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* Para pantallas pequeñas, 1 columna */
+    }
+}
+.slider-container {
+    display: flex;
+    width: 70%;
+    height: 70vh;
+    overflow-x: scroll;
+  }
+  
+  .slider-container img {
+    flex: 0 0 50%;
+    width: 50%;
+    object-fit: cover;
+  }
+  h2{
+    text-align: center;
+  }
+  footer {
+    background-color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    color: #777;
+    font-size: 0.9em;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #777;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: #38761d;
+}
+
+footer .social a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+footer .social img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+a  :hover{
+    background-color: beige;
+    color: #667e5b;
+}
